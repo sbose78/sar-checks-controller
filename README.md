@@ -1,4 +1,4 @@
-## SubjectAccessReview(SAR) Checks Operator
+## SubjectAccessReview(SAR) Checks Controller
 
 A controller which does SAR checks for a username and a Kubernetes Resource.
 
