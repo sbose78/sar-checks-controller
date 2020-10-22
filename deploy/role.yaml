@@ -5,6 +5,12 @@ metadata:
   name: sar-checks-operator
 rules:
 - apiGroups:
+  - "authorization.k8s.io"
+  resources:
+  - ""
+  verbs:
+  - ""
+- apiGroups:
   - ""
   resources:
   - pods

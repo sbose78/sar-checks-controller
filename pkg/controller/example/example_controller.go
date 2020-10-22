@@ -2,6 +2,7 @@ package example
 
 import (
 	"context"
+	"fmt"
 
 	examplev1alpha1 "github.com/sbose78/sar-checks-operator/pkg/apis/example/v1alpha1"
 	//v1 "k8s.io/api/authentication/v1"
@@ -96,7 +97,7 @@ func (r *ReconcileExample) Reconcile(request reconcile.Request) (reconcile.Resul
 		},
 	}
 	err = r.client.Create(context.TODO(), &sar)
-	//fmt.Println(sar.Status)
+	fmt.Println(sar.Status)
 	if err != nil {
 		return reconcile.Result{}, err
 		//fmt.Println(err.Error())
